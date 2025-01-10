@@ -1,12 +1,17 @@
 import { useState } from "react";
-import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/NavbarComponent";
+import Footer from "./components/Footer";
+import Section from "./components/SectionGenres";
 
 function App() {
   const [] = useState(0);
 
   return (
     <>
-      <h1>ciao</h1>
+      <Navbar></Navbar>
+      <Section></Section>
+      <Footer></Footer>
     </>
   );
 }
