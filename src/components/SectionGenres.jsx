@@ -8,7 +8,7 @@ const TVShowsComponent = () => {
   };
 
   return (
-    <section className="mt-4">
+    <section>
       <div className="d-flex align-items-center justify-content-between px-5">
         <div className="d-flex align-items-center">
           <h1 className="me-3">TV Shows</h1>

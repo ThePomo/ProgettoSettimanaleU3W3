@@ -1,11 +1,10 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import logo from "../assets/netflix_logo.png";
 import avatar from "../assets/avatar.png";
-import "../style.css";
 
 const NavbarComponent = () => {
   return (
-    <Navbar expand="lg" className="px-4">
+    <Navbar bg="dark" variant="dark" expand="lg" className="px-4">
       <Container fluid>
         <Navbar.Brand href="index.htm">
           <img src={logo} alt="Netflix Logo" className="navbar-logo" />

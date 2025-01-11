@@ -52,9 +52,15 @@ body {
   color: #fff;
 }
 
-.btn {
-  border-radius: 0 !important;
-  background-color: black !important;
+button.btn {
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+button.btn:hover {
+  color: #fff;
+  background-color: black;
+  border: none;
 }
 
 .icon-container {
@@ -67,14 +73,6 @@ body {
   padding: 5px;
 }
 
-.carousel-item .col {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.carousel-item .col:hover {
-  transform: rotate(0.5deg);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
 .socialIcon {
   display: flex;
   justify-content: center;
@@ -84,25 +82,15 @@ body {
   height: 100px;
 }
 
-.footer-links ul {
-  padding: 0;
-  margin: 0;
+.footer-links .row {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-links ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem;
-  transition: color 0.3s ease-in-out;
-}
-
-.footer-links ul li:hover {
-  color: #fff !important;
-  cursor: pointer;
-}
-.container {
-  max-width: 600px;
+.footer-links .col {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 
 .profileTitle {
@@ -121,4 +109,43 @@ button {
   outline: none;
   box-shadow: none;
   border-color: white;
+}
+
+.movie-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.card-container {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-container img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  color: #f1f1f1;
 }

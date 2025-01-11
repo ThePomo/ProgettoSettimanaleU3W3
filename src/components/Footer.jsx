@@ -4,7 +4,6 @@ const FooterComponent = () => {
   return (
     <footer>
       <section>
-        {}
         <div className="socialIcon container-fluid">
           <a
             href="https://www.facebook.com/netflixitalia/?locale=it_IT"
@@ -72,51 +71,49 @@ const FooterComponent = () => {
           </a>
         </div>
 
-        <div className="footer-links mt-5">
-          <div className="container text-secondary">
-            <div className="row">
-              <div className="col-12 col-sm-6 col-md-3">
-                <ul>
+        <div className="footer-links mt-3">
+          <div className="container text-secondary px-0">
+            <div className="row justify-content-center mx-0">
+              <div className="col-12 col-sm-6 col-md-3 px-2">
+                <ul className="list-unstyled text-center mb-2">
                   <li>Audio and Subtitles</li>
                   <li>Media Center</li>
                   <li>Privacy</li>
                   <li>Contact Us</li>
                 </ul>
               </div>
-              <div className="col-12 col-sm-6 col-md-3">
-                <ul>
+              <div className="col-12 col-sm-6 col-md-3 px-2">
+                <ul className="list-unstyled text-center mb-2">
                   <li>Audio Description</li>
                   <li>Investor Relations</li>
                   <li>Legal Notices</li>
                 </ul>
               </div>
-              <div className="col-12 col-sm-6 col-md-3">
-                <ul>
+              <div className="col-12 col-sm-6 col-md-3 px-2">
+                <ul className="list-unstyled text-center mb-2">
                   <li>Help Center</li>
                   <li>Jobs</li>
                   <li>Cookie Preferences</li>
                 </ul>
               </div>
-              <div className="col-12 col-sm-6 col-md-3">
-                <ul>
+              <div className="col-12 col-sm-6 col-md-3 px-2">
+                <ul className="list-unstyled text-center mb-2">
                   <li>Gift Cards</li>
                   <li>Terms of Use</li>
                   <li>Corporate Information</li>
                 </ul>
               </div>
             </div>
-            <div className="row mt-3">
+            <div className="row justify-content-center mt-2 mx-0">
               <div className="col text-center">
                 <button className="btn btn-outline-light btn-sm">
                   Service Code
                 </button>
               </div>
             </div>
-            <div className="row mt-3 mt-4">
+            <div className="row justify-content-center mt-2 mx-0">
               <div className="col text-center">
-                <small>
-                  &copy; 1997-2019 Netflix, Inc. (i-0d0fcda2fdf9c0de)
-                </small>
+                <small>&copy; 1997-2019 Netflix, Inc.</small>
               </div>
             </div>
           </div>
@@ -125,5 +122,4 @@ const FooterComponent = () => {
     </footer>
   );
 };
-
 export default FooterComponent;
