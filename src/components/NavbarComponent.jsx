@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../assets/netflix_logo.png";
 import avatar from "../assets/avatar.png";
 
@@ -6,14 +7,16 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="px-4">
       <Container fluid>
-        <Navbar.Brand href="index.htm">
+        <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="Netflix Logo" className="navbar-logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
         <Navbar.Collapse id="navbarNavAltMarkup">
           <Nav className="me-auto">
-            <Nav.Link href="index.htm">Home</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
             <Nav.Link href="#">TV Shows</Nav.Link>
             <Nav.Link href="#">Movies</Nav.Link>
             <Nav.Link href="#">Recently Added</Nav.Link>
@@ -31,20 +34,9 @@ const NavbarComponent = () => {
               align="end"
               className="p-2"
             >
-              <NavDropdown.Item href="#">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={avatar}
-                    alt="Avatar"
-                    className="navbar-avatar me-2"
-                  />
-                  <span className="testoPiccolo">Epicoder #1</span>
-                </div>
+              <NavDropdown.Item as={Link} to="/profile">
+                Account Page
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Manage Profiles</NavDropdown.Item>
-              <NavDropdown.Item href="profile.html">Account</NavDropdown.Item>
-              <NavDropdown.Item href="#">Help Center</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#">Sign out of Netflix</NavDropdown.Item>
             </NavDropdown>
