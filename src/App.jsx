@@ -33,7 +33,7 @@ const App = () => {
                 <h2 className="my-3 mx-4">Best Comedy</h2>
                 <MovieGallery searchQuery="American pie" />
                 <h2 className="my-3 mx-4">Must Watch Anime</h2>
-                <MovieGallery searchQuery="attack on titan" />
+                <MovieGallery searchQuery="one piece" />
               </Container>
               <Footer />
             </>
