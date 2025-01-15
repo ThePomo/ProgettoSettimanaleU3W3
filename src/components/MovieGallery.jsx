@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+import PropTypes from "prop-types";
 import "../style.css";
 
 const MovieGallery = ({ searchQuery }) => {
@@ -39,6 +40,9 @@ const MovieGallery = ({ searchQuery }) => {
       </Row>
     </div>
   );
+};
+MovieGallery.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
 };
 
 export default MovieGallery;
